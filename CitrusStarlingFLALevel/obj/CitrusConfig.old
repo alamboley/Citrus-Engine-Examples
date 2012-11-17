@@ -8,11 +8,11 @@
   <compiler>
     <define append="true">
       <name>CONFIG::debug</name>
-      <value>false</value>
+      <value>true</value>
     </define>
     <define append="true">
       <name>CONFIG::release</name>
-      <value>true</value>
+      <value>false</value>
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
@@ -30,20 +30,18 @@
       <name>CONFIG::desktop</name>
       <value>false</value>
     </define>
-    <optimize>true</optimize>
-    <omit-trace-statements>true</omit-trace-statements>
-    <verbose-stacktraces>false</verbose-stacktraces>
+    <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>C:\Users\james\Documents\Citrus\src</path-element>
-      <path-element>C:\Users\james\Documents\Citrus\bin\levels</path-element>
-      <path-element>C:\program files\flashdevelop\Library\AS3\classes</path-element>
+      <path-element>Z:\jamesgpollock\Documents\blah\Citrus-Engine-Examples\CitrusStarlingFLALevel\src</path-element>
+      <path-element>Z:\jamesgpollock\Documents\blah\Citrus-Engine-Examples\CitrusStarlingFLALevel\bin\levels</path-element>
+      <path-element>C:\Program Files\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
-      <path-element>C:\Users\james\Documents\Citrus\lib\CEV3-0-1-ALL.swc</path-element>
+      <path-element>Z:\jamesgpollock\Documents\blah\Citrus-Engine-Examples\CitrusStarlingFLALevel\lib\CEV3-0-1-ALL.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>C:\Users\james\Documents\Citrus\src\Main.as</path-element>
+    <path-element>Z:\jamesgpollock\Documents\blah\Citrus-Engine-Examples\CitrusStarlingFLALevel\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>30</default-frame-rate>
