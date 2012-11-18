@@ -2,6 +2,7 @@ package
 {
 	import com.citrusengine.core.CitrusEngine;
 	import com.citrusengine.core.StarlingCitrusEngine;
+	import com.citrusengine.physics.box2d.Box2D;
 	import flash.display.Loader;
 	import flash.display.MovieClip;
 	import flash.errors.IOError;
@@ -18,19 +19,26 @@ package
 		
 		public function Main() 
 		{
+			
+	
 			setUpStarling(true)
 			
 			//DEBUG FLAG
-			var devMode:Boolean;
+		var devMode:Boolean;
 			devMode = true;
 			if (devMode == true)
 			{
 				console.enabled = true;
+				starling.showStats = true
+				console.addCommand("reload", handleReloadCommand);
+	
+			
 				
 			}
 			else
 			{
 				console.enabled = false;
+				starling.showStats = false;
 			}
 			// END DEBUG FLAG
 			var loader:Loader = new Loader();
@@ -51,7 +59,13 @@ package
 			state = new SWFState(levelObjectMC);
 			e.target.loader.unloadAndStop();
 		}
-		
+		public function handleReloadCommand():void
+		{
+			var loader:Loader = new Loader();
+			loader.load(new URLRequest("\levels/level.swf"));
+			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, handleSWFLoadComplete, false, 0, true);
+			loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, onError);
+		}
 		
 		
 	}

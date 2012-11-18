@@ -2,7 +2,6 @@ package
 {
 	import com.citrusengine.core.CitrusEngine;
 	import com.citrusengine.core.StarlingState;
-	import com.citrusengine.core.State;
 	import com.citrusengine.math.MathVector;
 	import com.citrusengine.objects.CitrusSprite;
 	import com.citrusengine.objects.platformer.box2d.Coin;
@@ -15,7 +14,6 @@ package
 	import flash.display.MovieClip;
 	import com.citrusengine.utils.ObjectMaker2D;
 	import flash.geom.Rectangle;
-	import CupCake;
 	/**
 	 * ...
 	 * @author ...
@@ -40,9 +38,9 @@ package
 		override public function initialize():void
 		{
 			super.initialize();
-			
+
 			var box2D:Box2D = new Box2D("box2D");
-		box2D.visible = true;
+		box2D.visible = false;
 		add(box2D);
 		//view.loadManager.onLoadComplete.addOnce(handleLoadComplete);
 		ObjectMaker2D.FromMovieClip(_objectsMC);
