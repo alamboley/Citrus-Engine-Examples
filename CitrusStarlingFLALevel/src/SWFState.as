@@ -15,6 +15,7 @@ package
 	import flash.display.MovieClip;
 	import com.citrusengine.utils.ObjectMaker2D;
 	import flash.geom.Rectangle;
+	import CupCake;
 	/**
 	 * ...
 	 * @author ...
@@ -32,7 +33,7 @@ package
 			super();
 			_ce = CitrusEngine.getInstance()
 			_objectsMC = objectsMC;
-			var objects:Array = [Platform, Hero, CitrusSprite, Sensor, Coin, Enemy, Crate];
+			var objects:Array = [Platform, Hero, CitrusSprite, Sensor, Coin, Enemy, Crate, CupCake];
 			
 		}
 		
